@@ -4,7 +4,7 @@ Want to learn Node at your own pace?
 
 Love JavaScript and ready to branch into the Server world?
 
-Check out [NodeSchool](http://nodeschool.io/)
+Check out [NodeSchool](http://nodeschool.io/).
 
 These solutions are my own, saved here for personal reference and to assist others as they complete modules and face the same sorts of challenges I did.
 
