@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/4.1.2/bin/node',
+1 verbose cli   '/Users/jason/.npm-packages/bin/npm',
+1 verbose cli   'dist-tag',
+1 verbose cli   'add',
+1 verbose cli   'mypackage@2.1.0',
+1 verbose cli   'latest' ]
+2 info using npm@3.5.2
+3 info using node@v4.1.2
+4 verbose dist-tag add latest to mypackage@2.1.0
+5 silly mapToRegistry name mypackage
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry http://localhost:15443/
+8 silly mapToRegistry uri http://localhost:15443/mypackage
+9 verbose request uri http://localhost:15443/-/package/mypackage/dist-tags
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 9:56:59 AM
+12 verbose request id 861bf6d22acaf182
+13 http request GET http://localhost:15443/-/package/mypackage/dist-tags
+14 http 404 http://localhost:15443/-/package/mypackage/dist-tags
+15 verbose headers { 'content-type': 'application/json',
+15 verbose headers   date: 'Thu, 31 Dec 2015 14:56:59 GMT',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'content-length': '19' }
+16 verbose stack Error: missing : -/package/mypackage/dist-tags
+16 verbose stack     at makeError (/Users/jason/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+16 verbose stack     at CachingRegistryClient.<anonymous> (/Users/jason/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+16 verbose stack     at Request._callback (/Users/jason/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+16 verbose stack     at Request.self.callback (/Users/jason/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:198:22)
+16 verbose stack     at emitTwo (events.js:87:13)
+16 verbose stack     at Request.emit (events.js:172:7)
+16 verbose stack     at Request.<anonymous> (/Users/jason/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+16 verbose stack     at emitOne (events.js:82:20)
+16 verbose stack     at Request.emit (events.js:169:7)
+16 verbose stack     at IncomingMessage.<anonymous> (/Users/jason/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+17 verbose statusCode 404
+18 verbose cwd /Users/jason/www/labRoot/nodeSchool/core/howToNpm
+19 error Darwin 14.5.0
+20 error argv "/usr/local/Cellar/node/4.1.2/bin/node" "/Users/jason/.npm-packages/bin/npm" "dist-tag" "add" "mypackage@2.1.0" "latest"
+21 error node v4.1.2
+22 error npm  v3.5.2
+23 error code E404
+24 error 404 missing : -/package/mypackage/dist-tags
+25 verbose exit [ 1, true ]

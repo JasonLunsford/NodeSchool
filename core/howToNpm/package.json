@@ -1,0 +1,19 @@
+{
+  "name": "mypackage",
+  "version": "2.1.0",
+  "description": "my tutorial package",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonlunsford/NodeSchool.git"
+  },
+  "author": "Jason Lunsford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonlunsford/NodeSchool/issues"
+  },
+  "homepage": "https://github.com/jasonlunsford/NodeSchool#readme"
+}
