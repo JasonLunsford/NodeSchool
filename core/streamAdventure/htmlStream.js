@@ -8,7 +8,8 @@ var elemStream = tr.select('.loud').createStream();
 
 // pipe selected elements into map, streamed chunks converted into strings, uppercased, returned
 // and piped back into elemStream
-// WHY DOES THIS WORK?!?!
+// works because elemStream is a duplex stream, can pipe out (as it does to map), and accept pipe in
+// elemStream "knows" (via trumpet module's internal magic) whether it is sending or receiving 
 elemStream.pipe(map(function(input) {
 	return input.toString().toUpperCase();
 })).pipe(elemStream);
